@@ -201,7 +201,7 @@ function generatePriority(task) {
  */
 function showNoTasksDone(id) {
     document.getElementById(`${id}`).classList.add('noTask');
-    document.getElementById(`${id}`).innerHTML = 'No tasks are done';
+    document.getElementById(`${id}`).innerHTML = 'No tasks are here';
 }
 
 /**
