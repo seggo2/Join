@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" type="image/png" href="/assets/img/Capa 2 (1).svg">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="login.css">
+    <script src="/services/variables.js"></script>
+    <script src="/services/queries.js"></script>
+    <script src="login.components.js"></script>
+    <script src="login.security.js"></script>
+    <script src="/services/utils.js"></script>
+    <link rel="stylesheet" href="/style.css">
+</head>
+
+<body onload="init()">
+    <div class="logo">
+        <div><img src="/assets/img/Capa 2 (1).svg" alt=""></div>
+    </div>
+    <div class="mobileVision">
+
+        <div class="position">
+            <h1>Log in</h1>
+            <div class="underLine"></div>
+            <form class="password-container" onsubmit="login(); return false;">
+                <input required class="mail" minlength="7" placeholder="Email" type="email" id="mail">
+                <input required onclick="passwordVisible()" class="hide" minlength="7" placeholder="Password"
+                    type="password" id="password">
+                <div class="d-none message" id="message">ups Passwort or email are not correct Try again</div>
+                <div class="remember"> <input class="rememberBox" type="checkbox"> <b class="remember-text">Remember
+                        me</b> </div>
+                <div class="buttonPosition">
+                    <button type="submit" class="login">Log in</button>
+                    <button type="button" class="guest" onclick="guestLogin()">Guest Log in</button>
+                </div>
+            </form>
+        </div>
+        <div class="signUp">
+            <div class="signContainer"><b class="signText">Not a Join user?</b><button onclick="signUp()"
+                    class="signing">Sign up</button>
+            </div>
+            <div class="linkPosition">
+                <div><a href="/components/informations/privacy_policy.html">Privacy Policy</a></div>
+                <div><a href="/components/informations/legal_notice.html">Legal notice</a></div>
+            </div>
+        </div>
+    </div>
+    <div id="loading" class="loader d-none"></div>
+</body>
+
+</html>

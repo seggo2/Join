@@ -1,0 +1,50 @@
+<dialog id="board_modal" class="visually-hidden">
+  <div id="board_modal_inner" class="task_card">
+    <div class="task_card_head">
+      <span class="task_card_label" id="board_modal_category">User Story</span>
+      <img src="/assets/img/board/modal_close.png" alt="close Popup" onclick="closeBoardModal()">
+    </div>
+      <h2 class="board_modal_h2" id="board_modal_title">Kochwelt Page & Recipe Recommender</h2>
+
+      <span id="board_modal_description">Build start page</span>
+
+      <div>
+        <table>
+          <tr>
+            <td class="task_category_font task_category_table_td">Due date:</td>
+            <td id="board_modal_date">10/05/2023</td>
+          </tr>
+          <tr>
+            <td class="task_category_font task_category_table_td">Priority:</td>
+            <td class="board_modal_prio_td">
+              <span id="board_modal_prio_span">Medium</span>
+              <div id="board_modal_prio_img"></div>
+            </td>
+          </tr>
+        </table>
+      </div>
+
+      <span class="task_category_font">Assigned To:</span>
+
+      <ul id="board_modal_assigned_user"></ul>
+
+      <span class="task_category_font">Subtasks</span>
+
+      <div class="task_card_subtasks" id="board_modal_subtasks">
+        <div class="task_card_subtask"></div>
+      </div>
+
+      <div class="task_card_buttons">
+        <div class="task_card_button" onclick="boardModalDeleteTask()">
+          <img src="/assets/img/board/delete.png" alt="delete">
+          <span class="task_category_font">Delete</span>
+        </div>
+
+        <svg xmlns="http://www.w3.org/2000/svg" width="2" height="24" viewBox="0 0 2 24" fill="none">
+          <path d="M1 0V24" stroke="#D1D1D1" />
+        </svg>
+
+        <div id="board_modal_edit_task_button" class="task_card_button"></div>
+      </div>
+  </div>
+</dialog>

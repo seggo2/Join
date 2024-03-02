@@ -1,0 +1,80 @@
+<dialog id="overlay-edit-contact-desktop">
+    <div class="overlay-desktop">
+        <section id="add-contact-right-section">
+            <div id="add-contact-right-section-text-close-box">
+                <div id="addcontact-top-close-desktop" onclick="hideDialog('overlay-edit-contact-desktop');"
+                    class="pointer">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                        <mask id="mask0_123233_666" style="mask-type: alpha" maskUnits="userSpaceOnUse" x="0" y="0"
+                            width="24" height="24">
+                            <rect width="24" height="24" fill="#D9D9D9" />
+                        </mask>
+                        <g mask="url(#mask0_123233_666)">
+                            <path
+                                d="M12 13.4L7.09999 18.3C6.91665 18.4834 6.68332 18.575 6.39999 18.575C6.11665 18.575 5.88332 18.4834 5.69999 18.3C5.51665 18.1167 5.42499 17.8834 5.42499 17.6C5.42499 17.3167 5.51665 17.0834 5.69999 16.9L10.6 12L5.69999 7.10005C5.51665 6.91672 5.42499 6.68338 5.42499 6.40005C5.42499 6.11672 5.51665 5.88338 5.69999 5.70005C5.88332 5.51672 6.11665 5.42505 6.39999 5.42505C6.68332 5.42505 6.91665 5.51672 7.09999 5.70005L12 10.6L16.9 5.70005C17.0833 5.51672 17.3167 5.42505 17.6 5.42505C17.8833 5.42505 18.1167 5.51672 18.3 5.70005C18.4833 5.88338 18.575 6.11672 18.575 6.40005C18.575 6.68338 18.4833 6.91672 18.3 7.10005L13.4 12L18.3 16.9C18.4833 17.0834 18.575 17.3167 18.575 17.6C18.575 17.8834 18.4833 18.1167 18.3 18.3C18.1167 18.4834 17.8833 18.575 17.6 18.575C17.3167 18.575 17.0833 18.4834 16.9 18.3L12 13.4Z"
+                                fill="#2A3647" />
+                        </g>
+                    </svg>
+                </div>
+                <div id="add-contact-right-section-text-icon-box">
+                    <div id="add-contact-text-desktop">
+                        <form onsubmit="saveEditedContactData('desktop'); return false;">
+                            <div class="d-flex flex-column justify-content-center align-items-center g-24 grow-1">
+                                <label class="visually-hidden" for="edit-contact-name-desktop">Name:</label>
+                                <input type="text" name="fname" id="edit-contact-name-desktop" required
+                                    class="contact-input-desktop  contact-input-name-desktop" placeholder="Name" aria-invalid="true"
+                                    aria-describedby="description">
+                                <label class="visually-hidden" for="edit-contact-email-desktop">Email:</label>
+                                <input type="email" name="femail" id="edit-contact-email-desktop" required
+                                    class="contact-input-desktop  contact-input-email-desktop" placeholder="Email"
+                                    aria-invalid="true" aria-describedby="description">
+                                <label class="visually-hidden" for="edit-contact-phone-desktop">Phone:</label>
+                                <input type="tel" name="fphone" id="edit-contact-phone-desktop" required
+                                    class="contact-input-desktop  contact-input-phone-desktop" placeholder="Phone"
+                                    aria-invalid="true" aria-describedby="description">
+                            </div>
+
+                            <div class="add-contact-btn-container">
+                                <button type="submit" class="add-contact-btn-desktop pointer d-flex flex-row justify-content-center btn-hover-blue-fill"
+                                    id="add-contact-create-button">
+                                    <span>Edit contact</span>
+                                    <div id="add-contact-create-button-symbol-box">
+                                        <img src="/assets/img/contacts/check.svg" alt="check symbol"
+                                            id="add-contact-create-button-symbol">
+                                    </div>
+                                </button>
+                                <button type="button"
+                                    class="add-contact-btn-desktop-close pointer d-flex flex-row justify-content-center btn-hover-blue-rim "
+                                    id="edit-contact-create-button"
+                                    onclick="deleteContact(activeContact, true); hideDialog('overlay-edit-contact-desktop');">
+                                    <span>Delete</span>
+                                    <div id="add-contact-create-button-symbol-box">
+                                        <img src="/assets/img/contacts/check.svg" alt="check symbol"
+                                            id="add-contact-create-button-symbol">
+                                    </div>
+                                </button>
+                            </div>
+                        </form>
+                    </div>
+                    <div id="group-13-desktop">
+                        <div id="contact-user-symbol-badge-desktop" class="d-flex justify-content-center align-items-center">
+                            <span class="" id="contact-user-symbol-initials-desktop"></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="add-contact-left-section">
+            <div class="contact-bg-desktop" id="frame-195">
+                <div class="d-flex flex-column g-16" id="frame-206_Desktop">
+                    <img class="add-desktop" src="/assets/img/Capa 2.svg" alt />
+                    <div class="d-flex flex-column g-8" id="frame-205">
+                        <span class="add-contact-left-section-headline">Edit contact</span>
+                        <span class="fw-4 fs-2 white">Tasks are better with a team!</span>
+                    </div>
+                    <div class="bw-3 w-9 bc-lightblue" id="addcontact-top-text-Vector"></div>
+                </div>
+            </div>
+        </section>
+    </div>
+</dialog>

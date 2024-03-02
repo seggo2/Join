@@ -1,0 +1,208 @@
+#footer {
+  z-index: 1000;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+  background-color: #2a3647;
+  height: 80px;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+.footer_category {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: #cdcdcd;
+  gap: 4px;
+  height: 76px;
+  width: 80px;
+}
+
+
+.footer_category img {
+  width: 24px;
+}
+
+a {
+  text-decoration: none;
+}
+
+.footerImg {
+  visibility: hidden;
+  position: absolute;
+}
+
+@media(max-width:1000px) {
+  .footer_category:hover {
+    cursor: pointer;
+    border-radius: 8px;
+    background-color: #091931;
+  }
+  .footer_privacy{
+    display: none;
+  }
+  .footer_legal{
+    display: none;
+  }
+  .footer_links{
+    display: none;
+  }
+}
+
+@media(min-width:1000px) {
+  .footer_links{
+    display: flex;
+    flex-direction: column;
+    text-align:start;
+    gap: 25px;
+    position: absolute;
+    left: 60px;
+    top: 90%;
+    font-size: 18px;
+  }
+  .footer_privacy{
+    color: #cdcdcd;
+  }
+  .footer_legal{
+    color: #cdcdcd;
+  }
+  .footer_privacy:hover{
+    color: white;
+    text-decoration: underline;
+  }
+  .footer_legal:hover{
+    color: white;
+    text-decoration: underline;
+  }
+  .footerImg {
+    visibility: visible;
+    width: 100.034px;
+    height: 121.966px;
+    position: absolute;
+    top: 64px;
+  }
+
+  #footer {
+    height: 100%;
+    width: 262px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: unset;
+    font-size: 16px;
+  }
+
+  .footer_category {
+    display: block;
+    height: 20px;
+  }
+
+  .footerContacts {
+    padding-top: 17px;
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    width: 100%;
+    box-sizing: border-box;
+    top: 500px;
+  }
+  
+  .footerContacts img {
+    position: absolute;
+    top: 8px;
+    left: 60px;
+    width: 30px;
+    height: 30px;
+    padding-right: 10px;
+  }
+  
+  .footerContacts:hover {
+    background-color: #091931;
+    cursor: pointer;
+    height: 50px;
+  }
+
+  .footerBoard {
+    padding-top: 18px;
+    display: flex;
+    justify-content: center;
+    box-sizing: border-box;
+    padding-left: 50px;
+    position: absolute;
+    width: 100%;
+    top: 430px;
+  }
+
+  .footer_board {
+    padding-right: 30px;
+    margin-left: -20px;
+  }
+
+  .footerBoard img {
+    position: absolute;
+    top: 12px;
+    left: 60px;
+    width: 30px;
+    height: 30px;
+    padding-right: 24px;
+
+  }
+
+  .footerBoard:hover {
+    background-color: #091931;
+    cursor: pointer;
+    height: 50px;
+  }
+
+  .footerTasks {
+    padding-top: 18px;
+    display: flex;
+    justify-content: center;
+    box-sizing: border-box;
+    position: absolute;
+    width: 100%;
+    top: 360px;
+  }
+
+  .footerTasks img {
+    position: absolute;
+    top: 12px;
+    left: 60px;
+    width: 30px;
+    height: 30px;
+  }
+
+  .footerTasks:hover {
+    background-color: #091931;
+    cursor: pointer;
+    height: 50px;
+  }
+
+  .footerSummary {
+    padding-top: 16px;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    width: 100%;
+    top: 290px;
+  }
+
+  .footerSummary img {
+    position: absolute;
+    top: 8px;
+    left: 60px;
+    width: 30px;
+    height: 30px;
+  }
+
+  .footerSummary:hover {
+    background-color: #091931;
+    cursor: pointer;
+    height: 50px;
+  }
+}

@@ -1,0 +1,230 @@
+body {
+    margin: 0px;
+    background: #F6F7F8 !important;
+    font-family: 'Inter';
+
+}
+
+.mobileVision {
+    display: flex;
+    align-items: center;
+}
+
+.underLine {
+    border-top: 3px solid #29ABE2;
+    width: 100px;
+    margin-top: -30px;
+    padding-bottom: 30px;
+    border-radius: 1px;
+}
+
+.name {
+    background-image: url(/assets/img/person.png);
+    background-repeat: no-repeat;
+    background-position: 95%;
+    width: 100%;
+    height: 25px;
+    padding: 13px 21px;
+    border: 1px solid #d1d1d1;
+    border-radius: 10px;
+    font-size: 20px;
+}
+
+.mail {
+    background-image: url(/assets/img/mail.jpg);
+    background-repeat: no-repeat;
+    background-position: 95%;
+    width: 100%;
+    height: 25px;
+    padding: 13px 21px;
+    border: 1px solid #d1d1d1;
+    border-radius: 10px;
+    font-size: 20px;
+
+}
+
+.mobileVision {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.hide {
+    background-image: url(/assets/img/lock.jpg);
+    background-position: center;
+    background-size: 24px ,24px;
+    background-repeat: no-repeat;
+    background-position: 95%;
+    width: 100%;
+    height: 25px;
+    padding: 13px 21px;
+    border: 1px solid #d1d1d1;
+    border-radius: 10px;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+h1 {
+    font-size: 47px;
+    font-weight: 700;
+    padding-bottom: 16px;
+    margin-top: -5px;
+
+}
+
+.position {
+    position: relative;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 50%;
+    height: 531px;
+    padding: 32px 0px;
+    border-radius: 30px;
+    background-color: #ffff;
+    box-shadow: 0px 0px 14px 3px rgba(0, 0, 0, 0.04);
+
+}
+
+.password-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 24px;
+}
+
+::placeholder {
+    color: #d1d1d1;
+    font-size: 17px;
+    padding-left: 10px;
+}
+
+.remember {
+    width: 231px;
+    height: 24px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+}
+
+.remember-text {
+    font-weight: 400;
+    color: #A8A8A8;
+    font-size: 16px;
+}
+
+.login {
+    width: 180px;
+    height: 43px;
+    border-radius: 8px;
+    border: 1px;
+    background-color: #2A3647;
+    font-size: 16px;
+    font-weight: 700;
+    color: #ffff;
+}
+
+.logo img {
+    height: 78px;
+    width: 64px;
+    padding: 10px;
+}
+
+.linkPosition {
+    padding-top: 20px;
+    width: 246px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.bottomLinks {
+    text-decoration: none;
+    font-size: 16px;
+    color: #A8A8A8;
+    cursor: pointer;
+}
+
+button {
+    cursor: pointer;
+}
+
+input {
+    padding-left: 15px;
+}
+
+.acceptLink {
+    color: #29ABE2;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.arrow {
+    position: absolute;
+    left: 30px;
+    top: 35px;
+}
+
+.arrow:hover {
+    cursor: pointer;
+}
+#popup {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 326px;
+    height: 74px;
+    background-color: #2A3647;
+    color: #fff;
+    border-radius: 20px;
+    z-index: 1;
+    top: 100%; /* Startposition unterhalb des Bildschirms */
+    transform: translateY(100%);
+    box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.10);
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    animation: slideUp 0.5s ease-in-out forwards; /* Animationseffekt über 0.5 Sekunden */
+}
+
+@keyframes slideUp {
+    to {
+        top: 40%; /* Zielposition, wenn das Popup aktiv ist */
+        transform: translateY(0);
+    }
+}
+
+.d-none {
+    display: none !important;
+}
+.notsame{
+    color: red;
+    font-size: 13px;
+    font-weight: bold;
+    position: absolute;
+    top: 425px;
+    left: 40%;
+}
+
+@media(max-width:700px){
+    .mobileVision {
+        margin-left: 8px;
+        margin-right: 8px;
+    }
+    .position {
+        width: 100%;
+    }
+}
+
+@media(max-width:370px){
+    .name {   
+        width: 90%;
+    }
+    .mail {
+        width: 90%;
+    }
+    .hide {
+        width: 90%;
+    }
+}

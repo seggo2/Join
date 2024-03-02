@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Join</title>
+    <link rel="icon" href="/assets/img/favicon-join.png">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="/components/templates/header/header.css">
+    <link rel="stylesheet" href="/components/templates/footer/footer.css">
+    <link rel="stylesheet" href="/components/contacts/contacts.css">
+    <link rel="stylesheet" href="/components/contacts/contactsModal.css">
+    <link rel="stylesheet" href="/components/tasks/tasks.css">
+    <link rel="stylesheet" href="/components/join360/join360.css">
+    <link rel="stylesheet" href="/components/board/board.css">
+    <script src="/services/queries.js"></script>
+    <script src="/services/variables.js"></script>
+    <script src="/services/utils.js"></script>
+    <script src="/components/login/login.components.js"></script>
+    <script src="/components/contacts/contacts.js"></script>
+    <script src="/components/contacts/contactsDesktop.js"></script>
+    <script src="/components/contacts/contactsStringTemplates.js"></script>
+    <script src="/components/tasks/tasks.js"></script>
+    <script src="/components/board/board.js"></script>
+    <script src="/components/board/boardModal.js"></script>
+    <script src="/components/board/boardModal2.js"></script>
+    <script src="/components/contacts/contactsEvents.js"></script>
+    <script src="/components/join360/join360.js"></script>
+</head>
+<body onload="init()" id="body">
+    <div w3-include-html="/components/templates/header/header.html"></div>
+    <div w3-include-html="/components/contacts/contactsOverview.html"></div>
+    <div w3-include-html="/components/contacts/addContacts.html"></div>
+    <div w3-include-html="/components/contacts/editContacts.html"></div>
+    <div id="w3AddTask" w3-include-html="/components/tasks/tasksInclude.html"></div>
+    <div w3-include-html="/components/board/board.html"></div>
+    <div w3-include-html="/components/board/board_modal.html"></div>
+    <div w3-include-html="/components/board/board_modal_task.html"></div>
+    <div w3-include-html="/components/join360/dashBoard.html"></div>
+    <div w3-include-html="/components/contacts/contactViewDesktop.html"></div>
+    <div w3-include-html="/components/contacts/editContactDesktop.html"></div>
+    <div w3-include-html="/components/contacts/addContactDesktop.html"></div>
+    <div w3-include-html="/components/templates/footer/footer.html"></div>
+    <script defer src="script.js"></script>
+</body>
+</html>

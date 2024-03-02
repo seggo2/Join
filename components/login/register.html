@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="/assets/img/Capa 2 (1).svg">
+    <title>Register</title>
+    <link rel="stylesheet" href="register.css">
+    <script src="/services/variables.js"></script>
+    <script src="/services/queries.js"></script>
+    <script src="register.components.js"></script>
+    <script src="login.components.js"></script>
+    <script src="/services/utils.js"></script>
+    <script src="/components/contacts/contacts.js"></script>
+    <link rel="stylesheet" href="/style.css">
+<script src="/components/login/login.components.js"></script>
+</head>
+
+<body onload="init()">
+    <div class="logo">
+        <img src="/assets/img/Capa 2 (1).svg" alt="">
+    </div>
+    <div class="mobileVision">
+
+        <div class="position">
+            <img onclick="back()" class="arrow" src="/assets/img/arrow-left-line.png" alt="">
+            <h1>Sign up</h1>
+            <div class="underLine"></div>
+            <form class="password-container" onsubmit="register(); return false;">
+                <input required class="name" minlength="4" placeholder="Name" type="text" id="Name">
+                <input required class="mail" minlength="7" placeholder="Email" type="email" id="mail">
+                <input onclick="passwordVisibleRegister()" required class="hide" minlength="7" placeholder="Password"
+                    type="password" id="password">
+                <input onclick="passwordVisibleRegister()" required class="hide" minlength="7" placeholder="Confirm Password"
+                    type="password" id="passwordConfirm">
+                    <div id="notsame" class="notsame d-none">Ups! password are not the same</div>
+                <div class="remember">
+                    <input required class="rememberBox" type="checkbox"> <b class="remember-text">I accept the <a
+                            class="acceptLink" href="/components/informations/privacy_policy.html">Privacy
+                            policy</a></b>
+                </div>
+                <div class="d-none" id="popup">
+                    <span>You Signed Up successfully</span>
+                </div>
+                <button class="login">Sign up</button>
+            </form>
+        </div>
+
+        <div class="linkPosition">
+            <div><a class="bottomLinks" href="/components/informations/privacy_policy.html">Privacy Policy</a></div>
+            <div><a class="bottomLinks" href="/components/informations/legal_notice.html">Legal notice</a></div>
+        </div>
+    </div>
+    </div>
+</body>
+
+</html>

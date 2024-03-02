@@ -1,0 +1,67 @@
+<dialog id="board_modal_task" class="visually-hidden">
+  
+    <div id="edit_task_form">
+
+      <img class="board_modal_task_close" src="/assets/img/board/modal_close.png" alt="close Popup" onclick="closeBoardModalTask()">
+
+      <div class="form_categories">
+        <span>Title<span class="add_task_required">*</span></span>
+        <input class="add_task_inputs_modal" id="modal_task_title" required type="text" placeholder="Enter a title" />
+        <span id="title_is_required" class="d-none">This field is required</span>
+      </div>
+  
+  
+      <div class="form_categories">
+        <span>Description</span>
+        <textarea class="add_task_inputs_modal" name="" id="modal_task_description" cols="30" rows="3"
+          placeholder="Enter a Description"></textarea>
+      </div>
+  
+      <div class="form_categories">
+        <span>Prio</span>
+        <div class="add_task_priorities">
+          <button class="add_task_urgent_button add_task_input_button" id="urgent_button_modal" onclick="urgentButtonModal()">Urgent
+            <img id="task_prio_img_urgent_modal" src="/assets/img/addTask/prio_high.png" alt="">
+          </button>
+          <button class="add_task_medium_button add_task_input_button" id="medium_button_modal" onclick="mediumButtonModal()">Medium
+            <img id="task_prio_img_medium_modal" src="/assets/img/addTask/prio_medium.png" alt="">
+          </button>
+          <button class="add_task_low_button add_task_input_button" id="low_button_modal" onclick="lowButtonModal()">Low
+            <img id="task_prio_img_low_modal" src="/assets/img/addTask/prio_low.png" alt="">
+          </button>
+        </div>
+      </div>
+  
+      <div class="form_categories">
+        <span>Due date<span class="add_task_required">*</span></span>
+        <input class="add_task_inputs_modal" id="modal_task_date" required type="date">
+        <span id="date_is_required" class="d-none">This field is required</span>
+      </div>
+  
+      <div class="form_categories">
+        <span>Category<span class="add_task_required">*</span></span>
+        <select required class="add_task_inputs_modal" name="Category" id="modal_task_category">
+          <option value="" disabled selected hidden>Select task Category</option>
+          <option value="Technical Task">Technical Task</option>
+          <option value="User Story">User Story</option>
+        </select>
+        <span id="category_is_required" class="d-none">This field is required</span>
+      </div>
+  
+      <div class="form_categories">
+        <span>Assigned to</span>
+        <input class="add_task_inputs_modal" onclick="toggleSelectModal()" id="modal_task_user" placeholder="Select contacts to assign">
+        <div id="modal_tasks_contacts_container" class="d-none">
+          <ul id="modal_assigned_user"></ul>
+        </div>
+        <div id="modal_task_assigned_user" ></div>
+      </div>
+  
+      <div class="form_categories">
+        <span>Subtasks</span>
+        <div id="subtask_button_input_modal"></div>
+        <ul id="modal_subtask_list" style="list-style-type:disc"></ul>
+      </div>
+      <div id="modal_edit_task_finish"></div>
+    </div>
+</dialog>

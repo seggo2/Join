@@ -1,0 +1,58 @@
+
+<section id="sectionBoard" class="visually-hidden">
+  <div class="board_h1">
+    <h1 class="board_fontH1">Board</h1>
+    <input class="inputs board_input inputD_none" type="text" placeholder="Find Task" id="board_search_inputfield" oninput="renderFilteredTasks()">
+    <div onclick="openCreateTaskModal('sectionAddTasks', 'todo')" class="board_h1_img"><img src="/assets/img/board/board-plus.png" alt="add Task"></div>
+  </div>
+
+  <div class="board_section">
+    <search class="board_search">
+      <input class="inputs board_input" type="text" placeholder="Find Task" id="board_search_inputfield" oninput="renderFilteredTasks()">
+    </search>
+
+    <div class="board_todo board_sections">
+      <div class="board_h3">
+        <h3 class="boardH3Responsive">To do</h3>
+        <img onclick="openCreateTaskModal('sectionAddTasks', 'todo')" src="/assets/img/board/board_add.png" alt="">
+      </div>
+
+      <div ondrop="moveTo('todo')" ondragleave="removeHighlight('todo')"
+        ondragover="allowDrop(event); highlight('todo')" id="todo" class="noTask boardTaskScrolling">No tasks To do</div>
+      <!-- Placeholder bis JS intergriert wird-->
+    </div>
+    <div class="board_progress board_sections">
+      <div class="board_h3">
+        <h3  class="boardH3Responsive">In progress</h3>
+        <img onclick="openCreateTaskModal('sectionAddTasks', 'inprogress')" src="/assets/img/board/board_add.png" alt="">
+      </div>
+
+      <div ondrop="moveTo('inprogress')" ondragleave="removeHighlight('inprogress')"
+        ondragover="allowDrop(event); highlight('inprogress')" id="inprogress" class="noTask boardTaskScrolling">No tasks To do</div>
+      <!-- Placeholder bis JS intergriert wird-->
+    </div>
+    <div class="board_feedback board_sections">
+      <div class="board_h3">
+        <h3  class="boardH3Responsive">Await feedback</h3>
+        <img onclick="openCreateTaskModal('sectionAddTasks', 'feedback')" src="/assets/img/board/board_add.png" alt="">
+      </div>
+
+      <div ondrop="moveTo('feedback')" ondragleave="removeHighlight('feedback')"
+        ondragover="allowDrop(event); highlight('feedback')" id="feedback" class="noTask boardTaskScrolling">No tasks To do</div>
+      <!-- Placeholder bis JS intergriert wird-->
+    </div>
+    <div class="board_done board_sections">
+      <div class="board_h3">
+        <h3  class="boardH3Responsive">Done</h3>
+        <img class="board_done_img" onclick="openCreateTaskModal('sectionAddTasks', 'done')" src="/assets/img/board/board_add.png" alt="">
+      </div>
+
+      <div ondrop="moveTo('done')" ondragleave="removeHighlight('done')"
+        ondragover="allowDrop(event); highlight('done')" id="done" class="noTask boardTaskScrolling">No tasks To do</div>
+      <!-- Placeholder bis JS intergriert wird-->
+    </div>
+  </div>
+
+  <dialog id="board_add_task"></dialog>
+</section>
+
