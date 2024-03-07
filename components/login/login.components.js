@@ -190,6 +190,7 @@ async function keySettStrorage(key) {
 }
 
 async function guestLogin() {
+     
      contacts = [
           { "name": "Benedikt Ziegler", "email": "benediktz@gmail.com", "phone": "+1234567", "contactId": "98765abc", "initials": "BZ", "color": "812731" },
           { "name": "Anton Mayer", "email": "antom@gmail.com", "phone": "+1234567", "contactId": "12345abc", "initials": "AM", "color": "3e59c2" },

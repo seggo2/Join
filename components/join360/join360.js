@@ -148,7 +148,7 @@ function updateNameWidget() {//die funktion soll den namen raus suchen
     let name = USERS[ACTIVEUSERKEY].userData.name;
     // String has shortened for forename
     nameWidget.innerHTML = `  
-    <h2 id="j36_person-Name" class="j36_person-Name">dear ${name}</h2>`;
+    <h2 id="j36_person-Name" class="j36_person-Name">Dear ${name}</h2>`;
 }
 
 function myfunction() {
