@@ -756,10 +756,19 @@ h3 {
 
 @media(max-width:550px) {
   #board_modal {
-    position: fixed;
-    top: 40%;
-    left: 95%;
-    transform: translate(-50%, -50%);
-    animation: cardAnimation 0.5s ease-in-out 0s 1 normal forwards;
+    position: unset;
+    display: flex;
+    margin-left: 10% !important;
+    margin: 0px;
+    padding: 0px;
+    overflow: hidden;
+  }
+  .task_card{
+    display: flex;
+    width: 100%;
+    padding-right: 0px;
+  }
+  .task_card_buttons{
+    justify-content: flex-start;
   }
 }
